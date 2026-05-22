@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Generated datasets (rebuilt by tools/prepare_data.py) — too big for git
+data/yolo/
+data/classifier/
+
+# Training artifacts: ignore by default...
+*.onnx
+task2_detection/eval_out/
+task3_classification/eval_out/
+task4_pipeline/out/
+
+# ...BUT keep the two trained weights the API/Docker needs (manager clones + runs).
+# Order matters: ignore *.pt broadly, then re-include the two we ship.
+# keep the yolo run's plots/results (README references figures)
+!task2_detection/runs/**
+# ...then drop the heavy weights we DON'T ship (order matters: these come AFTER the
+# runs/** re-include so they win). API only needs best.pt + mobilenet.
+*.pt
+!task2_detection/runs/kamar_yolov8s/weights/best.pt
+!task3_classification/weights/mobilenet_v3_small.pt
+task2_detection/runs/kamar_yolov8s/weights/last.pt
+task3_classification/weights/efficientnet_b0.pt
+
+# Demo (user supplies; large)
+demo.mp4
+*.avi
+
+# OS
+Thumbs.db
+.DS_Store

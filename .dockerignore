@@ -1,0 +1,9 @@
+data/yolo/
+data/classifier/
+task4_pipeline/out/
+task1_eda/figures/
+task3_classification/figures/
+task2_detection/eval_out/
+**/__pycache__/
+*.ipynb_checkpoints
+.venv/

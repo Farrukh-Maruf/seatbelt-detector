@@ -1,0 +1,25 @@
+# NOTE: torch / torchvision are NOT pinned here on purpose.
+#   - Docker: the Dockerfile installs the CUDA build of torch (cu124) separately.
+#   - Local without Docker: install torch first, then this file. Pick ONE:
+#       GPU:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#       CPU:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#     (we trained on torch 2.11 + cu128; any recent 2.x works)
+ultralytics>=8.2,<8.4        # YOLOv8 (pulls torch automatically if you skip the step above)
+
+numpy<2.2
+opencv-python-headless==4.10.0.84
+pillow==10.4.0
+pyyaml==6.0.2
+
+scikit-learn==1.5.2         # ROC, Youden-J, confusion matrix, train/val split
+matplotlib==3.9.2
+seaborn==0.13.2
+pandas==2.2.3
+tqdm==4.66.5
+
+jupyter==1.1.1
+
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+python-multipart==0.0.12   
+
