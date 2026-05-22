@@ -150,7 +150,6 @@ Docker build + run sinab ko'rildi (`--gpus all`), ishladi.
 |---|---|
 | GET /health | ok, gpu:true, model:true |
 | POST /predict/image | driver/belt/bbox, warm 63ms |
-
 | Rasmda haydovchi yoq | 200 driver_detected False |
 | Buzilgan fayl | 422 File formati notogri; JPEG/PNG kutilmoqda |
 | Model Yuklanmagan | 503 Model not loaded |
