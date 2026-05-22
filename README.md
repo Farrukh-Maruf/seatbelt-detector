@@ -75,7 +75,7 @@ YOLOv8s, 640px, default LR (lr0=0.01), early stopping (eng yaxshi: epoch 17).
 
 **False Positive vs False Negative — qaysi xavfli?**
 **FP xavfliroq** = kamar taqqan haydovchini "taqmagan" deyish = **sababsiz jarima**.
-Shuning uchun precision'ga e'tibor berdik. Natija: **FP=2, FN=10** — model begunoh
+Shuning uchun precision'ga e'tibor berdik. Natija: **FP=2, FN=10** — model sababsiz
 jarima berishdan kora qoidabuzarni otkazib yuborishni koproq maqullaydi (ozimni hulosam). 
 
 **Va ohirida shuni aytish kerak**: kamar_bor P/R past (0.67/0.80):
