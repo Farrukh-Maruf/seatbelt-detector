@@ -155,8 +155,8 @@ Docker build + run sinab ko'rildi (`--gpus all`), ishladi.
 | Model Yuklanmagan | 503 Model not loaded |
 | Katta fayl >10MB | 413 Judaham katta file (>10MB) |
 
-**GPU + CPU fallback:** bir image ikkala mashinada — GPU'da `--gpus all` bilan, GPU'siz
-mashinada usiz (CPU, sekinroq).
+**GPU + CPU fallback:** bir image ikkala mashinada — GPU'da `--gpus all` bilan, GPU siz
+laptopda (CPU, sekinroq).
 
 
 ## Ishga tushirish (bitta buyruq)
@@ -192,6 +192,5 @@ docker run -p 8000:8000 --gpus all seatbelt-detector   # GPU'siz: "--gpus all" n
 ---
 
 ## Mendagi Muhit
- - 
 - Windows 11, Python 3.12, PyTorch 2.11 + CUDA 12.8
 - NVIDIA RTX 4050 Laptop (6GB), Ultralytics 8.2
