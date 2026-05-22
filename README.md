@@ -6,7 +6,7 @@ ikki bosqichli tizim: **YOLOv8 (haydovchini topadi) → MobileNetV3 (kamarni oqi
 
 ---
 
-## 0. Dataset haqiqati (muhim)
+## 0. Dataset haqida (muhim)
 
 - Bir rasmda **bir nechta haydovchi** bor, har birining kamar holati har xil.
 - Shuning uchun **rasm emas, har bir haydovchini label (box) bilan** belgiladim.
