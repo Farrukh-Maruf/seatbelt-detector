@@ -30,7 +30,7 @@ Grafiklar: `task1_eda/figures/`.
 | Tungi/IR rasm | ~97% |
 | Label o'lchami | kichik (umumiy kadr kengligining 4–17%) |
 
-**Qiyin Chalgituvchi holatlar:**
+**Qiyin Chalg'ituvchi holatlar:**
  - ~97% rasm kulrang (tungi) — kunduzgi rangli rasm deyarli yo'q
    (atiga ~11 ta). Demak model deyarli faqat kulrang sifat o'rganadi,
    kunduzgi generalizatsiya zaif bo'lishi mumkin.
@@ -59,11 +59,13 @@ YOLOv8s, 640px, default LR (lr0=0.01), early stopping (eng yaxshi: epoch 17).
 | kamar_yoq Recall | **0.873** | ≥0.80 |
 | FPS | **64.6** | ≥30 | 
 
-CONFUSION MATRIX (val, 70 rasm, 89 label):
-                  ism  :  kamar_bor  kamar_yoq  background
-            kamar_bor  :     12          2          4
-            kamar_yoq  :      2         61          4
-            background :      4          8          0
+**CONFUSION MATRIX (val, 70 rasm, 89 label):**
+
+| Haqiqiy / Bashorat | kamar_bor | kamar_yoq | background |
+|---|---|---|---|
+| **kamar_bor** | 12 | 2 | 4 |
+| **kamar_yoq** | 2 | 61 | 4 |
+| **background** | 4 | 8 | 0 |
 
 
 **Qarorlar va sabablari:**
