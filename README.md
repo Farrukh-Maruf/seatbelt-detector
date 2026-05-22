@@ -12,7 +12,7 @@ ikki bosqichli tizim: **YOLOv8 (haydovchini topadi) → MobileNetV3 (kamarni oqi
 - Shuning uchun **rasm emas, har bir haydovchini label (box) bilan** belgiladim.
 - Datasetni qo'lda labellab chiqdim (YOLO format).
 
-**Dataset raqamlari:** 352 rasm, 453 labels — `kamar_bor` 97 (21%), `kamar_yoq` 356 (79%).
+**Dataset haqida:** 352 rasm, 453 labels — `kamar_bor` 97 (21%), `kamar_yoq` 356 (79%).
 Imbalance ≈ 3.7:1. Rasmlarning **~97% kulrang/IR (tungi rasmlar)**.
 
 ---
